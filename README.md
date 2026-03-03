@@ -13,10 +13,14 @@ This project:
   - User query entity extraction  
   - Neighbour node traversal  
   - Vector similarity search
+- ✅ Workflow orchestration using LangGraph
+- ✅ Tracing & observability using LangSmith
 
 ---
 
 ## Architecture Flow
+
+The entire pipeline is implemented as a structured graph workflow using LangGraph.
 
 User Query  
 → Cypher Generation (LLM)  
@@ -26,7 +30,7 @@ User Query
 &nbsp;&nbsp;&nbsp;&nbsp;• If invalid → Graph RAG → Final Answer  
 → If Cypher fails → Graph RAG → Final Answer  
 
-![Architecture Flow](./architecture/advanced_graph_rag.png)
+![Architecture Flow](./images/architecture/advanced_graph_rag.png)
 
 ---
 
@@ -50,6 +54,9 @@ GROQ_API_KEY=your_groq_api_key  # Provide your cloud provider's API key
 NEO4J_URI=neo4j+s://<...>.neo4j.io
 NEO4J_USERNAME=neo4j
 NEO4J_PASSWORD=your_password
+
+# LangSmith Tracing (Optional)
+LANGSMITH_API_KEY=your_langsmith_api_key
 ```
 
 ---
@@ -75,6 +82,23 @@ Open and run:
 ```
 3_advanced_graph_rag.ipynb
 ```
+
+---
+
+## 🔍 Tracing & Observability (LangSmith)
+
+Tracing is powered by **LangSmith**, enabling full visibility into the **LangGraph** workflow.
+
+With tracing enabled, you can:
+
+- 🔎 See the exact execution path (Cypher → Review → Fallback)  
+- 📊 Track token usage per LLM call  
+- ⏱ Measure latency at each step  
+- 🔁 Inspect retries and validation loops  
+
+### 🔬 LangSmith Trace Screenshot
+
+![LangSmith Tracing Screenshot](./images/langsmith_trace.png)
 
 ---
 
