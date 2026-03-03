@@ -1,0 +1,5 @@
+python-dotenv
+AgentManager
+LLMGraphTransformer
+langchain-core
+langchain-text-splitters
