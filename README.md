@@ -73,7 +73,7 @@ This loads nodes and relationships into Neo4j.
 ### 3️⃣ Run Advanced Graph RAG
 Open and run:
 ```
-3_Advanced_Graph_RAG.ipynb
+3_advanced_graph_rag.ipynb
 ```
 
 ---
