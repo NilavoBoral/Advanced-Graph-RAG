@@ -26,7 +26,7 @@ User Query
 &nbsp;&nbsp;&nbsp;&nbsp;• If invalid → Graph RAG → Final Answer  
 → If Cypher fails → Graph RAG → Final Answer  
 
-![Architecture Flow](./architecture.png)
+![Architecture Flow](./architecture/advanced_graph_rag.png)
 
 ---
 
