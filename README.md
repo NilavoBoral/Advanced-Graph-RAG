@@ -52,6 +52,8 @@ NEO4J_USERNAME=neo4j
 NEO4J_PASSWORD=your_password
 ```
 
+---
+
 ## Steps to Run
 
 ### 1️⃣ Create Knowledge Graph
