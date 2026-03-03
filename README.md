@@ -26,6 +26,8 @@ User Query
 &nbsp;&nbsp;&nbsp;&nbsp;• If invalid → Graph RAG → Final Answer  
 → If Cypher fails → Graph RAG → Final Answer  
 
+![Architecture Flow](./architecture.png)
+
 ---
 
 ## Setup
@@ -81,7 +83,7 @@ Open and run:
 
 - `graph.pkl` is required for Step 2 and Step 3.
 - Ensure Neo4j is running before executing notebooks.
-- If uploaded from Colab, remove widget metadata for GitHub rendering.
+- The current implementation uses **OpenAI GPT-OSS-20B via Groq Provider**. You can replace it with any LLM provider (OpenAI, Azure, Anthropic, etc.) as per your requirements.  
 
 ---
 
