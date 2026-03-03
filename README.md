@@ -60,9 +60,7 @@ Run:
 python 1_knowledge_graph_conversion_using_cloud_llm.py
 ```
 This generates:
-```
-graph.pkl
-```
+- graph.pkl
 
 ### 2️⃣ Load Graph into Neo4j Aura DB
 Open and run:
