@@ -81,7 +81,7 @@ document = [Document(page_content=c) for c in chunks]
 
 graph_document = llm_transformer.convert_to_graph_documents(document)
 
-with open("full_graph.pkl", "wb") as f:
+with open("graph.pkl", "wb") as f:
     pickle.dump(graph_document, f)
 
 print(graph_document)
